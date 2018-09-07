@@ -4,16 +4,34 @@ body {
 }
 
 .layout-grid {
-    padding: 20px;
+    padding: 0 20px;
 }
 
-@media (min-width: 768px){  
+
+
+.layout-column img {
+    max-width: 100%;
+}
+
+@media (min-width: 600px){  
     .layout-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
         max-width: 520px;
         margin: auto;
+    }
+
+    .layout-grid.two {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .layout-grid.three {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .layout-grid.four {
+        grid-template-columns: repeat(4, 1fr)
     }
 }
 
