@@ -60,3 +60,24 @@ h4, .h4 { font-size: 1.4rem }
 } 
 
 
+
+/*
+ * component/hero
+ */
+
+.hero {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.hero-title {
+    margin-bottom: 0;
+}
+
+
